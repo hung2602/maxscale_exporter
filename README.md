@@ -31,10 +31,12 @@ WantedBy=multi-user.target
 
 ## Add permission
 sudo chown maxscale-exporter:maxscale-exporter /usr/local/bin/maxscale_exporter
+
 sudo chmod 755 /usr/local/bin/maxscale_exporter
 
 ## Start service
 sudo systemctl daemon-reload
+
 sudo systemctl start --now maxscale_exporter
 
 ##check status
